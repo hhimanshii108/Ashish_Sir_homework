@@ -1,5 +1,6 @@
 
-#include <stdio.h>
+#include<iostream>
+using namespace std;
 int BinarySearch(int array[], int l, int r, int element){
    while (l <=r){
         int comp=0;
@@ -11,28 +12,28 @@ int BinarySearch(int array[], int l, int r, int element){
          l = m + 1;
       else
          r = m - 1;
-         printf("comparison %d\n", comp);
+        cout<<"comparison"<<comp;
    }
    return -1;
 }
 int main()
 {
     int n,j,element;
-    printf("enter the no. of elements in the array");
-    scanf("%d", &n);
+   cout<<"enter the no. of elements in the array";
+   cin>>n;
    int array[n];
    for(j=0;j<n;j++)
    {
-       scanf("%d", &array[j]);
+      cin>>array[j];
    }
-   printf("enter the searching element");
-   scanf("%d", &element);
+  cout<<"enter the searching element";
+  cin>>element;
    int index = BinarySearch(array, 0, n-1, element);
    if(index == -1 ) {
-      printf("Element not found in the array ");
+     cout<<"Element not found in the array ";
    }
    else {
-      printf("Element found at index : %d", index);
+     cout<<"Element found at index :"<<index;
    }
    return 0;
 }
