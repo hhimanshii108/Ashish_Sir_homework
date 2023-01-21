@@ -1,4 +1,4 @@
-//{ Driver Code Starts
+
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -6,8 +6,6 @@ using namespace std;
 class Solution
 {
 	public:
-	//Function to find the shortest distance of all the vertices
-    //from the source vertex S.
     vector <int> dijkstra(int V, vector<vector<int>> adj[], int S)
     {
     set<pair<int,int>>st;
@@ -38,10 +36,6 @@ class Solution
       return dis;
     }
 };
-
-
-//{ Driver Code Starts.
-
 
 int main()
 {
@@ -77,5 +71,3 @@ int main()
     return 0;
 }
 
-
-// } Driver Code Ends
